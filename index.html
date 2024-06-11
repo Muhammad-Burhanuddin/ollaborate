@@ -782,7 +782,7 @@
                 }
     
                 @media (max-width: 480px) {
-                    .col-lg-3 {
+                    .atozmobile {
                         width: 50%;
                     }
                 }
@@ -810,7 +810,7 @@
             </div>
     
             <div class="row" style="margin-top: 50px;">
-                <div class="col-lg-3 col-md-6 col-sm-12">
+                <div class="atozmobile col-lg-3 col-md-6 col-sm-12">
                     <div class="circle1">
                         <img src="assets/images/Browse.jpg" alt="Img">
                         <div class="circle-text">Browse products together</div>
@@ -1426,23 +1426,62 @@
         </div>
     </div>
 
-
-    <div class="rbt-progressbar-area bg-color-extra2 rbt-section-gap mt--30 ">
+    <div class="rbt-progressbar-area bg-color-extra2 rbt-section-gap mt--30">
         <div class="container text-center">
             <div class="row mb--30 g-5 align-items-end">
-                <div class="col-lg-12 col-md-6 col-12 inset wow fadeInDown" data-wow-delay="100ms"
-                    data-wow-duration="1000ms">
+                <div class="col-lg-12 col-md-6 col-12 inset wow fadeInDown" data-wow-delay="100ms" data-wow-duration="1000ms">
                     <div class="section-title text-start">
-                        <h2 class="title color-black" style="font-family: 'Poppins', sans-serif;">How will we work
-                            together? </h2>
+                        <h2 class="title color-black" style="font-family: 'Poppins', sans-serif;">How will we work together? </h2>
                         <img src="assets/images/bg/headline.png" alt="">
                     </div>
                 </div>
             </div>
             <div class="row">
                 <style>
+                    .radial-progress-single {
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                    }
+                    
+                    .radial-progress-single img {
+                        display: block;
+                        margin: 0 auto;
+                    }
+    
+                    .circle-info {
+                        text-align: center;
+                    }
+    
+                    .row.alikhan {
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: flex-start;
+                        margin-left: 3%;
+                        margin-right: 3%;
+                    }
+    
+                    @media (max-width: 1200px) {
+                        .row.alikhan {
+                            margin-left: 2%;
+                            margin-right: 2%;
+                        }
+                    }
+    
+                    @media (max-width: 992px) {
+                        .row.alikhan {
+                            margin-left: 1%;
+                            margin-right: 1%;
+                        }
+                    }
+    
                     @media (max-width: 768px) {
-
+                        .row.alikhan {
+                            flex-wrap: wrap;
+                            margin-left: 0;
+                            margin-right: 0;
+                        }
+    
                         .w1,
                         .w2,
                         .w3,
@@ -1451,119 +1490,109 @@
                             position: relative;
                             left: 0 !important;
                             margin: 0 auto !important;
+                            width: 100%;
+                            margin-bottom: 20px;
                         }
-
-                        .w1 {
-                            left: 0 !important;
+    
+                        .circle-info {
+                            margin-top: 10px;
                         }
-
-                        .w2 {
-                            left: 0 !important;
+                    }
+    
+                    @media (max-width: 576px) {
+                        .row.alikhan {
+                            flex-direction: column;
+                            align-items: center;
                         }
-
-                        .w3 {
-                            left: 40% !important;
-                        }
-
-                        .w4 {
-                            left: 75% !important;
-                        }
-
+    
+                        .w1,
+                        .w2,
+                        .w3,
+                        .w4,
                         .w5 {
-                            left: 110% !important;
+                            width: 100%;
+                            margin-bottom: 20px;
                         }
-
+    
+                        .circle-info {
+                            margin-top: 10px;
+                            text-align: center;
+                        }
                     }
                 </style>
                 <div class="col-lg-12">
-                    <div class="row alikhan" style="position: relative;left: 3%;">
-
-                        <div class="col-lg-2 p-0">
-                            <div class=" radial-progress-single m-0 p-0" style="width: 100% !important;">
-                                <div class=" m-0 p-0" style="width: 100% !important;" data-percent="80"
-                                    data-bar-color="#059DFF" data-track-color="#F6F6F6">
-                                    <img src="assets/images/bg/picon.png" alt="" style="height: 45px;" class="mb-3">
+                    <div class="row alikhan">
+                        <div class="col-lg-2 p-0 w1">
+                            <div class="radial-progress-single m-0 p-0" style="width: 100% !important;">
+                                <div class="m-0 p-0" style="width: 100% !important;" data-percent="80" data-bar-color="#059DFF" data-track-color="#F6F6F6">
+                                    <img src="assets/images/bg/picon.png" alt="" style="height: 55px;" class="mb-3">
                                     <img src="assets/images/bg/progress1.png" alt="">
                                     <img src="assets/images/bg/pdown1.png" alt="" style="height: 60px;" class="">
                                     <div class="circle-info">
-                                        <h6 class="subtitle" style="margin-right: 25px;">Meeting with demo, & targeting
-                                            a use case
-                                        </h6>
+                                        <h6 class="subtitle">Meeting with demo, & targeting a use case</h6>
                                     </div>
                                 </div>
                             </div>
                         </div>
-
-                        <div class="col-lg-2  p-0">
-                            <div class=" radial-progress-single m-0 p-0" style="width: 100% !important;">
-                                <div class="m-0 p-0" style="width: 100% !important;" data-percent="80"
-                                    data-bar-color="#059DFF" data-track-color="#F6F6F6">
-                                    <img src="assets/images/bg/protop2.png" alt="" style="height: 45px;" class="mb-3">
+    
+                        <div class="col-lg-2 p-0 w2">
+                            <div class="radial-progress-single m-0 p-0" style="width: 100% !important;">
+                                <div class="m-0 p-0" style="width: 100% !important;" data-percent="80" data-bar-color="#059DFF" data-track-color="#F6F6F6">
+                                    <img src="assets/images/bg/protop2.png" alt="" style="height: 55px;" class="mb-3">
                                     <img src="assets/images/bg/progress1.png" alt="">
                                     <img src="assets/images/bg/prodown2.png" alt="" style="height: 60px;">
                                 </div>
-                                <div class="circle-info" style="margin-right: 35px;">
-                                    <h6 class="subtitle">You can try it
-                                        internally without
-                                        involving IT or other resources (no cost for testing)
-                                    </h6>
+                                <div class="circle-info" style="">
+                                    <h6 class="subtitle">You can try it internally without involving IT or other resources (no cost for testing)</h6>
                                 </div>
                             </div>
                         </div>
-
-                        <div class="col-lg-2  p-0">
+    
+                        <div class="col-lg-2 p-0 w3">
                             <div class="radial-progress-single m-0 p-0" style="width: 100% !important;">
-                                <div class=" m-0 p-0" style="width: 100% !important;" data-percent="80"
-                                    data-bar-color="#059DFF" data-track-color="#F6F6F6">
-                                    <img src="assets/images/bg/ptop3.png" alt="" style="height: 45px;" class="mb-3">
+                                <div class="m-0 p-0" style="width: 100% !important;" data-percent="80" data-bar-color="#059DFF" data-track-color="#F6F6F6">
+                                    <img src="assets/images/bg/ptop3.png" alt="" style="height: 55px;" class="mb-3">
                                     <img src="assets/images/bg/progress1.png" alt="">
                                     <img src="assets/images/bg/pdown3.png" alt="" style="height: 60px;">
                                     <div class="circle-info">
-                                        <h6 class="subtitle">Iterations in lean process to achieve targeted service
-                                        </h6>
+                                        <h6 class="subtitle">Iterations in lean process to achieve targeted service</h6>
                                     </div>
                                 </div>
                             </div>
                         </div>
-
-                        <div class="col-lg-2  p-0">
+    
+                        <div class="col-lg-2 p-0 w4">
                             <div class="radial-progress-single m-0 p-0" style="width: 100% !important;">
-                                <div class=" m-0 p-0" style="width: 100% !important;" data-percent="80"
-                                    data-bar-color="#059DFF" data-track-color="#F6F6F6">
-                                    <img src="assets/images/bg/4.1.png" alt="" style="height: 45px;" class="mb-3">
+                                <div class="m-0 p-0" style="width: 100% !important;" data-percent="80" data-bar-color="#059DFF" data-track-color="#F6F6F6">
+                                    <img src="assets/images/bg/4.1.png" alt="" style="height: 55px;" class="mb-3">
                                     <img src="assets/images/bg/progress1.png" alt="">
                                     <img src="assets/images/bg/pdown4.png" alt="" style="height: 60px;">
-
                                     <div class="circle-info">
-                                        <h6 class="subtitle">When target achieved: Very simple to put on production.
-                                            Only one simple embed script (1 line of code)
-                                        </h6>
+                                        <h6 class="subtitle">When target achieved: Very simple to put on production. Only one simple embed script (1 line of code)</h6>
                                     </div>
                                 </div>
                             </div>
                         </div>
-
-                        <div class="col-lg-2  p-0">
+    
+                        <div class="col-lg-2 p-0 w5">
                             <div class="radial-progress-single m-0 p-0" style="width: 100% !important;">
-                                <div class=" m-0 p-0" style="width: 100% !important;" data-percent="80"
-                                    data-bar-color="#059DFF" data-track-color="#F6F6F6">
-                                    <img src="assets/images/bg/ptop5.png" alt="" style="height: 45px;" class="mb-3">
+                                <div class="m-0 p-0" style="width: 100% !important;" data-percent="80" data-bar-color="#059DFF" data-track-color="#F6F6F6">
+                                    <img src="assets/images/bg/ptop5.png" alt="" style="height: 55px;" class="mb-3">
                                     <img src="assets/images/bg/progress1.png" alt="">
                                     <img src="assets/images/bg/pdown5.png" alt="" style="height: 60px;">
                                     <div class="circle-info" style="margin-left: 20px;">
-                                        <h6 class="subtitle">Later: Possible integration with existing knowledge
-                                            management, and other support/ ticketing systems
-                                        </h6>
+                                        <h6 class="subtitle">Later: Possible integration with existing knowledge management, and other support/ ticketing systems</h6>
                                     </div>
                                 </div>
                             </div>
                         </div>
-
+    
                     </div>
                 </div>
             </div>
         </div>
     </div>
+    
 
 
     <div class="rbt-about-area about-style-1 bg-color-white rbt-section mt--80"
