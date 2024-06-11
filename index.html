@@ -1266,32 +1266,35 @@
 
                 .gradient-bg {
                     width: 200px;
-
                     background: linear-gradient(to right, #2850A3, #00AFEF);
                     border-radius: 50px;
                     height: 50px;
+                    display: flex;
                     align-items: center;
+                    justify-content: center;
                     color: white;
                     text-align: center;
                     font-weight: bolder;
                     font-size: 28px;
+                    
                 }
-
+    
                 .gradient-bg2 {
                     width: 200px;
-
-                    background: linear-gradient(to right,  #DF55DD , #284FA2);
+                    background: linear-gradient(to right, #DF55DD, #284FA2);
                     border-radius: 50px;
                     height: 50px;
+                    display: flex;
                     align-items: center;
+                    justify-content: center;
                     color: white;
                     text-align: center;
                     font-weight: bolder;
                     font-size: 28px;
+               
                 }
-
-                .circle-text {
-                    text-align: center;
+                .circle-textatoz {
+                    text-align: left;
                     font-family: 'Poppins', sans-serif;
                     font-size: 20px;
                     margin-top: 20px;
@@ -1299,14 +1302,28 @@
                 }
 
                 @media (max-width: 768px) {
-                    .circle-text {
+                    .circle-textatoz {
                         font-size: 16px;
                     }
                 }
 
                 @media (max-width: 480px) {
-                    .circle-text {
+                    .circle-textatoz {
                         font-size: 14px;
+                    }
+                }
+
+                .vertical-line {
+                    border-left: 2px solid #ccc;
+                    height: 70%;
+                    position: absolute;
+                    align-items: center;
+                  left: 50%;
+                }
+
+                @media (max-width: 768px) {
+                    .vertical-line {
+                        display: none;
                     }
                 }
             </style>
@@ -1324,36 +1341,36 @@
             </div>
 
             <div class="row justify-content-center">
-                <div class="col-lg-5 col-md-6 col-sm-12 text-center">
+                <div class="col-lg-5 col-md-6 col-sm-12 ">
                     <div class="circle1">
-                        <img src="assets/images/physicalstore.jpg" alt="Img">
+                        <img src="assets/images/ph.png" alt="Img"  style="height: 350px; width: 350px; ">
                     </div>
                     <div class="gradient-bg">
-                        <p class="circle-text">Physcial Store</p>
+                        <p >Physcial Store</p>
                     </div>
 
-                    <div class="circle-text">
+                    <div class="circle-textatoz">
                         <p> Establish a relationship with the customer. The seller has the expertise
                             to find the right products. Seller can upsell - generate additional sales. The seller can
                             guide you through payment until the purchase is completed.</p>
                     </div>
                 </div>
-                <div class="col-lg-2 col-md-6 col-sm-12 text-center">
-                 
-                </div>-
-                <div class="col-lg-5 col-md-6 col-sm-12 text-center">
+                <div class="col-lg-2 col-md-6 col-sm-12 ">
+                    <div class="vertical-line"></div>
+                </div>
+                <div class="col-lg-5 col-md-6 col-sm-12 ">
                     <div class="content img-sc inset wow fadeInUp" data-wow-delay="100ms" data-wow-duration="700ms">
-                   
-                        <img src="assets/images/bg/u1.png" alt="Img" style="height: 350px; position: relative;">
+
+                        <img src="assets/images/bg/u1.png" alt="Img" style="height: 300px; margin-bottom:20px">
                         <img src="assets/images/bg/u4.png" alt="Img" class="text-end imgbtn1"
-                            style="height: 200px; position: absolute; right: 50px; margin-top: 40px;">
-                     
-                       
+                            style="height: 200px; position: absolute; right: 100px; margin-top: 40px;">
+
+
                     </div>
                     <div class="gradient-bg2">
-                        <p class="circle-text">Webshpe</p>
+                        <p>Webshpe</p>
                     </div>
-                    <div class="circle-text">
+                    <div class="circle-textatoz">
                         <p>The customer can shop from the comfort of their own home. The customer
                             can easily browse between products and read about their properties.</p>
                     </div>
