@@ -1811,79 +1811,146 @@
     </div>
 
 
-
-    <div class="rbt-about-area about-style-1 bg-color-white rbt-section mt--30"
-    style="font-family: 'Poppins', sans-serif;">
-    <div class="container">
-        <style>
-            .border-column {
-                border: 1px solid #000; /* Adds a border to each column */
-                padding: 15px; /* Adds padding inside each column */
-                border-radius: 10px; /* Optional: rounds the corners of the borders */
-                background-color: #f9f9f9; /* Optional: changes the background color of each column */
-                margin-bottom: 15px; 
-            }
-
-            .column-space {
-                margin-right: 15px; /* Adds space between columns */
-            }
-        </style>
-       
-        <div class="row g-5 align-items-end">
-            <div class="col-lg-12 col-md-6 col-12 inset wow fadeInDown" data-wow-delay="100ms" data-wow-duration="1000ms">
-                <div class="section-title text-start">
-                    <h2 class="title color-black" style="font-family: 'Poppins', sans-serif;">Customer journeys</h2>
-                    <img src="assets/images/bg/headline.png" alt="">
+    <div class="rbt-about-area about-style-1 bg-color-white rbt-section" style="font-family: 'Poppins', sans-serif;">
+        <div class="container">
+            <style>
+                .border-column {
+                    border: 1px solid #000;
+                    padding: 15px;
+                    background-color: #f9f9f9;
+                    margin-bottom: 15px;
+                    position: relative;
+                    flex: 1;
+                    display: flex;
+                    flex-direction: column;
+                }
+    
+                .border-column::before {
+                    content: attr(data-title);
+                    position: absolute;
+                    top: -15px;
+                    left: 50%;
+                    transform: translateX(-50%);
+                    border-radius: 50px;
+                    background: linear-gradient(to right, #DF55DD, #284FA2);
+                    padding: 0 10px;
+                    font-weight: bold;
+                    font-size: 1.1em;
+                }
+    
+                .column-space {
+                    margin-right: 30px;
+                }
+    
+                .border-column p {
+                    margin-top: 20px;
+                }
+    
+                .border-column p,
+                .border-column li {
+                    color: black;
+                }
+    
+                .row {
+                    display: flex;
+                    flex-wrap: wrap;
+                    align-items: flex-start;
+                    margin-left: -15px;
+                    margin-right: -15px;
+                }
+    
+                .column {
+                    padding-left: 15px;
+                    padding-right: 15px;
+                    display: flex;
+                    flex: 1;
+                    min-width: 200px;
+                    height: 500px;
+                }
+    
+                @media (max-width: 768px) {
+                    .row {
+                        flex-direction: column;
+                    }
+    
+                    .column {
+                        min-width: 100%;
+                        margin-bottom: 15px;
+                    }
+                }
+    
+                @media (max-width: 480px) {
+                    .border-column::before {
+                        font-size: 1em;
+                    }
+    
+                    .border-column {
+                        padding: 10px;
+                    }
+                }
+            </style>
+    
+            <div class="row g-5 align-items-end">
+                <div class="col-lg-12 col-md-6 col-12 inset wow fadeInDown" data-wow-delay="100ms" data-wow-duration="1000ms">
+                    <div class="section-title text-start">
+                        <h2 class="title color-black" style="font-family: 'Poppins', sans-serif;">Customer journeys</h2>
+                        <img src="assets/images/bg/headline.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="row g-5 mt--20">
+                <div class="column">
+                    <div class="border-column text-white" data-title="Webshop">
+                        <p>The seller can<strong>together with the customer:</strong> </p>
+                        <ol>
+                            <li>search through various products in the online store and find those that solve the customer's needs</li>
+                            <li>add items to the customer's shopping cart</li>
+                            <li>assist with payment until the transaction is completed</li>
+                        </ol>
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="border-column text-white" data-title="Finance">
+                        <p>The customer agent can,<strong>together with the customer:</strong> </p>
+                        <ol>
+                            <li>help fill out applications</li>
+                            <li>help the customer sign offers so that the trade is completed</li>
+                            <li>help the customer to use the system so that they become more familiar and loyal</li>
+                        </ol>
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="border-column text-white" data-title="Public">
+                        <p>The customer agent can <strong>together with the user:</strong></p>
+                        <ol>
+                            <li>go through forms and other public processes together</li>
+                            <li>actually fill out and complete the process together</li>
+                        </ol>
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="border-column text-white" data-title="SaaS">
+                        <p>The seller can<strong>together with the customer:</strong></p>
+                        <ol>
+                            <li>showcase the platform, through the show room, to potential customers and convert them into customers (sell subscriptions)</li>
+                            <li>provide support so that the customer becomes more familiar with the service and more faithful</li>
+                        </ol>
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="border-column text-white" data-title="Callcenter">
+                        <p>Telemarketers can,<strong> while on the phone:</strong></p>
+                        <ol>
+                            <li>get the customer into a meeting now to present various offers</li>
+                            <li>get the customer into a meeting now to guide the customer through the entire buying process until the deal is completed</li>
+                        </ol>
+                    </div>
                 </div>
             </div>
         </div>
-        <div class="row g-4">
-            <div class="col-lg-2  border-column column-space">
-                <p><strong>Webshop</strong></p>
-                <p>The seller can together with the customer:</p>
-                <ol>
-                    <li>search through various products in the online store and find those that solve the customer's needs</li>
-                    <li>add items to the customer's shopping cart</li>
-                    <li>assist with payment until the transaction is completed</li>
-                </ol>
-            </div>
-            <div class="col-lg-2 border-column column-space">
-                <p><strong>Finance</strong></p>
-                <p>The customer agent can, together with the customer:</p>
-                <ol>
-                    <li>help fill out applications</li>
-                    <li>help the customer sign offers so that the trade is completed</li>
-                    <li>help the customer to use the system so that they become more familiar and loyal</li>
-                </ol>
-            </div>
-            <div class="col-lg-2 border-column column-space">
-                <p><strong>Public</strong></p>
-                <p>The customer agent can together with the user:</p>
-                <ol>
-                    <li>go through forms and other public processes together</li>
-                    <li>actually fill out and complete the process together</li>
-                </ol>
-            </div>
-            <div class="col-lg-2  border-column column-space">
-                <p><strong>SaaS</strong></p>
-                <p>The seller can together with the customer:</p>
-                <ol>
-                    <li>showcase the platform, through the show room, to potential customers and convert them into customers (sell subscriptions)</li>
-                    <li>provide support so that the customer becomes more familiar with the service and more faithful</li>
-                </ol>
-            </div>
-            <div class="col-lg-2  border-column column-space">
-                <p><strong>Callcenter</strong></p>
-                <p>Telemarketers can, while on the phone:</p>
-                <ol>
-                    <li>get the customer into a meeting now to present various offers</li>
-                    <li>get the customer into a meeting now to guide the customer through the entire buying process until the deal is completed</li>
-                </ol>
-            </div>
-        </div>
     </div>
-</div>
-</div>
+    
+
 
 
 
