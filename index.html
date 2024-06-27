@@ -47,7 +47,7 @@
     }
 </style>
 
-<body class="rbt-header-sticky" style="font-family: 'Poppins', sans-serif;">
+<body class="rbt-header-sticky">
     <div class="rbt-banner-3 variation-02"
         style="background-image: url(assets/images/bg/ali.jpg);height: 650px; background-repeat: no-repeat;background-position: center;background-size: cover;">
         <div class="wrapper w-100">
@@ -81,6 +81,8 @@
         </div>
     </div>
     </div>
+
+
     <div class="rbt-rbt-blog-area rbt-section-gap bg-color-white">
         <div class="container">
             <div class=" g-5 align-items-center mb--30 inset wow fadeInDown" data-wow-delay="100ms" data-wow-duration="900ms">
@@ -143,6 +145,8 @@
             </div>
         </div>
     </div>
+    
+    
     <div class="rbt-team-area rbt-section mt-5">
         <div class="container">
             <div class="row mb--60 g-5 align-items-end">
@@ -300,6 +304,10 @@
             </div>
         </div>
     </div>
+  
+  
+  
+  
     <div class="rbt-about-area about-style-1 bg-color-white rbt-section mt--70">
         <div class="container">
             <div class="row  align-items-center">
@@ -777,11 +785,17 @@
     
                 @media (max-width: 768px) {
                     .col-lg-3 {
-                        width: 50%;
+                 
                     }
                 }
     
                 @media (max-width: 480px) {
+                    .atozmobile {
+                        width: 50%;
+                    }
+                }
+
+                @media (max-width: 768px) {
                     .atozmobile {
                         width: 50%;
                     }
@@ -816,19 +830,19 @@
                         <div class="circle-text">Browse products together</div>
                     </div>
                 </div>
-                <div class="col-lg-3 col-md-6 col-sm-12">
+                <div class="atozmobile col-lg-3 col-md-6 col-sm-12">
                     <div class="circle1">
                         <img src="assets/images/build.jpg" alt="Img">
                         <div class="circle-text">Build a complex basket</div>
                     </div>
                 </div>
-                <div class="col-lg-3 col-md-6 col-sm-12">
+                <div class="atozmobile col-lg-3 col-md-6 col-sm-12">
                     <div class="circle1">
                         <img src="assets/images/find.jpg" alt="Img">
                         <div class="circle-text">Find information about products on external websites</div>
                     </div>
                 </div>
-                <div class="col-lg-3 col-md-6 col-sm-12">
+                <div class="atozmobile col-lg-3 col-md-6 col-sm-12">
                     <div class="circle1">
                         <img src="assets/images/go.jpg" alt="Img">
                         <div class="circle-text">Go through payment process until complete</div>
@@ -921,6 +935,22 @@
                         margin-bottom: 300px;
                     }
                 }
+
+                .responsive-img {
+                    position: absolute;
+                    left: 80%;
+                    top: 80%;
+                    height: 80px;
+                  }
+              
+                  /* Mobile view adjustments */
+                  @media (max-width: 768px) {
+                    .responsive-img {
+                      left: 70%;
+                    }
+                  }
+
+            
             </style>
             <div class="row mb--30 g-5 align-items-end">
                 <div class="col-lg-12 col-md-6 col-12">
@@ -956,8 +986,8 @@
                             style="height: 250px; position: absolute; right: 0; margin-top: 40px;">
                         <img src="assets/images/bg/u6.png" alt="img" class="imgbtn"
                             style="position: absolute; right: 0; top: 70%; height: 100px;">
-                        <img src="assets/images/bg/u9.png" alt="img" class="text-start limg"
-                            style="position: absolute; left: 80%; top: 80%; height: 80px;">
+                        <img src="assets/images/bg/u9.png" alt="img" class="text-start limg responsive-img"
+                           >
                     </div>
                 </div>
             </div>
@@ -1877,9 +1907,7 @@
             z-index: 1;
         }
         @media (max-width: 768px) {
-            .row {
-                flex-direction: column;
-            }
+            
             .column {
                 min-width: 100%;
                 margin-bottom: 15px;
